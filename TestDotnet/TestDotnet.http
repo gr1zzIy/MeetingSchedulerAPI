@@ -1,0 +1,10 @@
+@TestDotnet_HostAddress = https://localhost:7146
+@TestDotnet_HttpAddress = http://localhost:5000
+
+### Test HTTPS endpoint directly
+GET {{TestDotnet_HostAddress}}/weatherforecast
+Accept: application/json
+
+### Test HTTP to HTTPS redirection
+GET {{TestDotnet_HttpAddress}}/weatherforecast
+Accept: application/json
