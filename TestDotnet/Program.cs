@@ -40,4 +40,5 @@ app.MapPost("/meetings", (MeetingRequest request, DataStore store, MeetingSchedu
     );
 });
 
-app.Run();
+
+await app.RunAsync();
